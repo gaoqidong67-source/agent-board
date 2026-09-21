@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mao Method"
+  short_description: "Structured analysis for work, decisions, and team problems"
+  default_prompt: "Use $maozedong-maoxuan-skill to analyze this situation with a structured, clarification-first approach."
