@@ -1,1 +1,87 @@
+# === 用户特定规则 ===
 决策记录/2026-06-20_临时作图任务转交与数字员工职责切换.md
+
+# === Windows / 系统文件 ===
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+ahthumbs.db
+*.lnk
+
+# === 编辑器 / IDE ===
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# === Python 缓存 ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# === 日志 ===
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Node.js ===
+node_modules/
+
+# === 原包内嵌的 .git 目录 ===
+# 第三方 Skill 原包解压时偶尔带 .git，不应随本仓库追踪
+**/原包/.git/
+
+# === 测试记录 / 运行输出 ===
+# 带时间戳的测试结果、benchmark、报告 —— 都是运行产物
+**/internal/tests/test_results/*test_results_*
+**/internal/tests/test_results/*skill_test_results_*
+**/internal/tests/test_results/*optimized_skill_test_results_*
+**/internal/tests/test_results/*boundary_test_results_*
+**/internal/tests/test_results/*extended_boundary_test_results_*
+**/internal/tests/test_results/*comprehensive_test_report_*
+**/internal/tests/performance_results/performance_benchmark_*
+**/internal/reports/batch_processing/
+**/internal/testing/
+**/internal/tests/test_reports/comprehensive_test_report_*
+
+# === 备份文件 ===
+**/*backup_*
+**/*.bak
+
+# === 临时中间产物脚本（mao/internal 等目录里的 debug/extract/fix 系列） ===
+**/internal/extract_*.py
+**/internal/debug_*.py
+**/internal/fix_*.py
+**/internal/create_*.py
+**/internal/collect_*.py
+**/internal/run_extended_tests.py
+**/internal/run_all_tests.py
+**/internal/quick_test.py
+**/internal/final_*.py
+**/internal/analyze_*.py
+**/internal/rename_*.py
+**/internal/performance_benchmark.py
+**/internal/performance_monitor.py
+**/internal/comprehensive_progress_plan.md
+**/internal/delivery_checklist.md
+**/internal/collect_*_plan.md
+**/internal/documents_improvement_plan.md
+**/internal/initial_works.json
+**/internal/daily/
+**/internal/PHASE*_PLAN.md
+**/internal/add_boundary_tests.py
+**/internal/ma_skill_integration_old.py
+**/internal/tools/*backup*
