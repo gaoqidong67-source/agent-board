@@ -1,0 +1,17 @@
+* text=auto
+
+.gitattributes text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.ps1 text eol=crlf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.png binary
+*.gif binary
+*.jpg binary
+*.jpeg binary
+
+# 第三方原包有 SHA-256 完整性清单，必须逐字节保留。
+成员Skills/**/原包/** -text !eol
+蒸馏来源/**/原包/** -text !eol
