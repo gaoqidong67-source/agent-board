@@ -18,7 +18,10 @@
 蒸馏来源/**/原包/** text eol=crlf
 
 # 这些上游包原本使用 LF。
-成员Skills/xinqingnian/原包/** text eol=lf
+成员Skills/xinqingnian/原包/**/*.html text eol=lf
+成员Skills/xinqingnian/原包/**/*.md text eol=lf
+成员Skills/xinqingnian/原包/**/*.py text eol=lf
+成员Skills/xinqingnian/原包/**/*.yaml text eol=lf
 成员Skills/mao/原包/SKILL.md text eol=lf
 成员Skills/karpathy/原包/README.md text eol=lf
 成员Skills/karpathy/原包/SKILL.md text eol=lf
