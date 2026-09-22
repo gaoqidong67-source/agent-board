@@ -12,6 +12,27 @@
 *.jpg binary
 *.jpeg binary
 
-# 第三方原包有 SHA-256 完整性清单，必须逐字节保留。
-成员Skills/**/原包/** -text !eol
-蒸馏来源/**/原包/** -text !eol
+# 第三方原包有 SHA-256 完整性清单。Git 对文本使用规范化存储，
+# checkout 时恢复其归档换行风格，使全新克隆仍可通过清单校验。
+成员Skills/**/原包/** text eol=crlf
+蒸馏来源/**/原包/** text eol=crlf
+
+# 这些上游包原本使用 LF。
+成员Skills/xinqingnian/原包/** text eol=lf
+成员Skills/mao/原包/SKILL.md text eol=lf
+成员Skills/karpathy/原包/README.md text eol=lf
+成员Skills/karpathy/原包/SKILL.md text eol=lf
+
+# 原包中的二进制资源不得做文本转换。
+成员Skills/**/原包/**/*.gif binary
+成员Skills/**/原包/**/*.jpg binary
+成员Skills/**/原包/**/*.jpeg binary
+成员Skills/**/原包/**/*.png binary
+成员Skills/**/原包/**/*.pdf binary
+成员Skills/**/原包/**/*.mp4 binary
+蒸馏来源/**/原包/**/*.gif binary
+蒸馏来源/**/原包/**/*.jpg binary
+蒸馏来源/**/原包/**/*.jpeg binary
+蒸馏来源/**/原包/**/*.png binary
+蒸馏来源/**/原包/**/*.pdf binary
+蒸馏来源/**/原包/**/*.mp4 binary
